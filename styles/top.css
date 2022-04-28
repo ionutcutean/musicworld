@@ -1,0 +1,21 @@
+.navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.navigation__items{
+    background-color: red;
+    display: flex;
+}
+
+.navigation__items__item{
+    background-color: blue;
+    margin: .3rem;
+}
