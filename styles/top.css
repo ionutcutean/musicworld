@@ -1,21 +1,143 @@
-.navigation{
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.navigation {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: green;
+    background-color: rgb(75, 192, 201);
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    padding-bottom: .6rem;
+    padding-top: .6rem;
     align-items: center;
+    border-bottom: 2px solid white;
 }
 
-.navigation__items{
-    background-color: red;
+.navigation>a{
+    font-family: 'MuseoModerno', cursive !important;
+    text-decoration: none;
+    max-width: min-content;
+    line-height: 1;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.navigation__items {
     display: flex;
 }
 
-.navigation__items__item{
-    background-color: blue;
+.navigation__searchbar__group {
+    width: 100%;
+    margin:auto;
+    display: flex;
+    flex-wrap: nowrap;  /*nu trece sub*/ 
+    font-size: 1.25rem;
+    padding: .25rem;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.navigation__form{
+    width: 50%;
+    margin:auto;
+}
+
+.navigation__searchbar {
+    width: 100%;
+    padding: .25rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.navigation__searchbar__group>button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.navigation__items__item {
     margin: .3rem;
+}
+
+.navigation__items__item>a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.mobile-icon{
+    max-width: 32px;
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+
+@media only screen and (max-width:500px){
+    .navigation{
+        justify-content: space-evenly;
+    }
+    .navigation__items__item{
+        margin: .5rem auto ;
+        border: 2px solid white;
+        border-radius: 10px;
+        height: fit-content;
+    }
+    .navigation__items__item a{
+        padding: 1rem;
+        margin: 1rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.5rem !important;
+    }
+    .navigation__searchbar__group{
+        display: none;
+        margin: auto;
+    }
+    .navigation__items {
+        display: none !important;
+        margin: auto;
+        margin-top: .5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100% !important;
+    }
+    .mobile-menu{
+        display: none;
+        position: fixed;
+        left:0;
+        right:0;
+        top:10%;
+        bottom:0;
+        background-color: rgb(75, 192, 201);
+        animation: fadein .7s;
+    }
+    .navigation__items__mobile{
+        position: absolute;
+        top:25%;
+        left:25%;
+        right: 25%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .mobile-icon{
+        display: block;
+    }
 }

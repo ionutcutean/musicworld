@@ -1,0 +1,81 @@
+.middle{
+    align-self: center;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: auto;
+}
+.login-form{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.login-form div{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+    margin: .25rem auto;
+}
+.login-form div a{
+    color: white;
+    margin-top: .25rem;
+}
+.login-form div * {
+    margin: auto .25rem;
+}
+.login-form div label{
+    align-self: flex-start;
+    font-weight: 400;
+    color: white;
+}
+.login-btn{
+    width: 100%;
+    height: 2rem;
+    background-color: crimson;
+    color:white;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: white;
+    margin: 1rem auto !important;
+    outline: none;
+}
+.login-btn:hover{
+    background-color: darkred;
+    transition-duration: .3s;
+}
+
+.login-form div input{
+    font-size: .85rem;
+    padding: .25rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.custom-input{
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 2.5px;
+    border: 1px solid transparent;
+}
+
+.custom-input:hover{
+    background-color: lightgray;
+    border: 1px solid crimson;
+    transition-duration: .7s;
+}
+.custom-input:focus{
+    border: 1px solid crimson;
+}
+@media only screen and (max-width: 400px) {
+    body{
+        height: 100% !important;
+    }
+    .middle{
+        margin-top: 11rem;
+        margin-bottom: 10rem;
+    }
+    
+}

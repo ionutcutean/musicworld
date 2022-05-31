@@ -1,0 +1,59 @@
+
+.registration-box{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.registration-form{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.registration-form div{
+    display: flex;
+    flex-direction: column;
+    margin: .25rem auto;
+}
+.registration-form{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-weight: 300;
+}
+
+
+.custom-input{
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 2.5px;
+    font-size: .9rem;
+    padding: .25rem;
+    border: 1px solid transparent;
+}
+
+.custom-input:hover{
+    background-color: lightgray;
+    border: 1px solid crimson;
+    transition-duration: .7s;
+}
+.custom-input:focus{
+    border: 1px solid crimson;
+}
+
+#registration-btn{
+    width: 100%;
+    height: 2rem;
+    background-color: crimson;
+    color:white;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: white;
+    margin: 1rem auto !important;
+    outline: none;
+}
+#registration-btn:hover{
+    background-color: darkred;
+    transition-duration: .3s;
+}

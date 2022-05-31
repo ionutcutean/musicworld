@@ -1,0 +1,74 @@
+.middle{
+    justify-content: center !important;
+}
+.about__section{
+    height: 92%;
+    display: flex;
+    align-items: center;
+}
+.about{
+    color: #1a110e;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.about>div>div>h1, .about>h1, .about>div>div>h2{
+    font-size: 2.5rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 100;
+    
+}
+.about>h1{
+    text-align: center;
+    color:aliceblue
+}
+.about>div>div>h2{
+    color: #1013bb;
+    font-size: 1.2rem;
+    margin-bottom: .1rem;
+}
+
+.about__container{
+    display: flex;
+    margin: auto 0rem !important;
+    margin-top: 8rem;
+    max-width: 100%;
+    align-self: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.about__card{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 3rem auto;
+    text-align: center;
+
+    padding: 5px;
+    border: 5px;
+    border-left: none;
+    border-right: none;
+    background-color:white;
+    border-radius: 10px;
+
+}
+.about__card>h2{
+    white-space: nowrap;
+    align-self: center;
+}
+.about__card>p{
+    margin-top: .1rem;
+    max-width: 70%;
+    align-self: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+@media only screen and (max-width:400px){
+    .about__container{
+        flex-direction: column !important;
+    }
+    .about__card{
+        width: 80%;   
+    }
+}
